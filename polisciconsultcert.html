@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {margin:0px; padding:0px;}
+            .heading {position:fixed; width:100vw; background-color:white; box-shadow: 5px 10px 15px;text-align:center; padding:40px; margin:0px; border:0px solid white;}
+            .logodo {background-image: url("Poli logo.png"); background-size:cover; background-repeat:no-repeat; height:10vw; width:15vw; position:absolute; left:0px; top:0px; margin:15px;}
+            .heading-word {text-shadow: 3px 6px 9px;}
+          /*dropdown bullshit*/
+                       /* Dropdown Button */
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/56/56763.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:4vw;
+  height:4vw;
+  
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+  
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+          /*b2b*/
+            .backstyle {width:100vw; height:17vw;}
+            .head-classay {text-align:center;}
+            .headibout {text-align:center; color:darkgray; font-size:2vw;}
+            .info-boy {font-size:2vw; text-align:center;}
+            .subhead {text-align:center;}
+            .proof {text-align:center; border-top: 2px solid black; border-bottom: 2px solid black;}
+            .proof img {width:50vw; height:50vw;}
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="heading">
+            <div class="logodo"></div>
+            <h1 class="heading-word">Political Consulting Certification Training&nbsp;&nbsp;   <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#about">About</a>
+    <a href="#resources">Resources</a>
+    <a href="#">Link 3</a>
+  </div>
+</div></h1>
+           
+        </div>
+        <div class="backstyle" id="about"></div>
+        <h1 class="head-classay" >About</h1>
+        <p class="headibout">"Our Associates Have Committed And Verified That This Training Is Important And Necessary For Those Seeking To Become Political Consultants"</p>
+        <p class="info-boy">Our founder has created a standard and guide for becoming a Political Consultant. Our goal as a standard for Political Consulting is to help the youthful as well as the underrepresented to foster a skill and certification that can help them succeed in life and in politics. Our examination and guide can help young individuals to understand how to run for politics or make a career out of consulting others in their political races. This certification is used to qualify an individual to run a political campaign, to run as a politician themself, and to use said knowledge to further their knowledge of the "process" of political knowledge.</p><hr>
+        <h1 class="head-classay">The Benefits Of A Politi++ Certification</h1>
+        <p class="headibout">"The benefits of the Politi++ Certification include a higher rate of self representation, a knowledge of the process of our American Political Structure, and a Potential future as a politician. This certification can boost your aura of efficiency in sales or politics by demonstrating your skills in understanding structure, an understanding of promoting and advertising, as well as being diplomatic and crafty." </p>
+        <h2 class="subhead">Sales Employers Think Kindly Upon The Politically Certified As Sales Is Similar To Political Campaigning</h2>
+        <div class="proof"><img src="polysally.png"></div>
+        <h2 class="subhead">The Rewards Are Granduer As Your Potential Salary Fires Through The Ozone</h2>
+        <div class="proof"><img src="polystatypat.png"></div>
+        <h2 class="subhead">You will be part of the politically intelligent minority</h2>
+        <div class="proof"><img src="finalee.png"></div>
+        <h1 class="head-classay" id="resources">Resources</h1>
+        <h1>baked beans</h1>
+        <h1>baked beans</h1>
+        <h1>baked beans</h1>
+        <h1>baked beans</h1>
+        <h1>baked beans</h1>
+        <h1>baked beans</h1>
+        <h1>baked beans</h1>
+        <h1>baked beans</h1>
+        <h1>baked beans</h1>
+        <script>
+            /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+        </script>
+    </body>
+</html>
