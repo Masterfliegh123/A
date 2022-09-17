@@ -147,11 +147,10 @@ window.onclick = function(event) {
             
             function kbitch() {
   var x = document.getElementById("SessionCode");
-  var y = document.getElementById("Hideaway");
+  var y = document.getElementByTagName("template")[0];
+  var clon = y.content.cloneNode(true);
   if (x.value === 4) {
-    y.style.display = "block";
-  } else {
-    y.style.display = "none";
+    document.body.appendChild(clon);
   }
 }
         </script>
